@@ -4,6 +4,7 @@
   "description": "A react widget with integrated email functionality towards algoook.info free email API",
   "main": "./dist/index.js",
   "types": "index.d.ts",
+  "homepage": "https://algobook.info/docs/email-widget",
   "scripts": {
     "build": "babel src/ -d dist --copy-files"
   },

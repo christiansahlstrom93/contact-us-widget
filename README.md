@@ -12,6 +12,8 @@ In order to use the API and this widget, you need to contact us with your **Emai
 
 The widget is fully customizable in terms of styling and copy. Each element has their own styling object and the widget also have support for a className prop. The **only** mandatory prop is your **Email** that should be trusted by the API.
 
+**Full documentation is found [here](https://algobook.info/docs/email-widget)**
+
 ## Example of the widget with default design
 
 Example image of default design of the widget
