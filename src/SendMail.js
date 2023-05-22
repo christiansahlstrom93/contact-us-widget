@@ -47,7 +47,7 @@ export const SendMail = (props) => {
       return;
     }
     try {
-      await fetch("https://api.algobook.info/v1/mail/send", {
+      const response = await fetch("https://api.algobook.info/v1/mail/send", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -59,9 +59,14 @@ export const SendMail = (props) => {
           recipient: recipient,
         }),
       });
-      setEmail("");
-      setMessage("");
-      setSuccess(true);
+      const jsonResponse = await response.json();
+      if (jsonResponse.error) {
+        setError(jsonResponse.error)
+      } else if (jsonResponse.status === "SUCCESS") {
+        setEmail("");
+        setMessage("");
+        setSuccess(true);
+      }
     } catch (err) {
       setError(generalErrorText);
     }
