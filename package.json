@@ -1,6 +1,6 @@
 {
   "name": "react-email-widget",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A react widget with integrated email functionality towards algoook.info free email API",
   "main": "./dist/index.js",
   "types": "index.d.ts",
